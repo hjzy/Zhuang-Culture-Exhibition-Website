@@ -37,29 +37,11 @@ public class UserControl {
         if(DigestUtils.md5Hex(password).equals(DigestUtils.md5Hex(loginUser.getPwd())))
         {
             session.setAttribute("loginUser",loginUser);
-            switch (loginUser.getRole()){
-                // 1：监察人员 2：管理人员 3：系统管理员 4：公告发布员',
-                case "1":
-
-                    return "index";
-
-                case "3":
-                    LOGGER.info("管理员登录成功！");
-                    return "index";
-                case "4":
-                  //  return "redirect:/announcement/findAllAnnouncement";
                     return "redirect:/announcement/page";
-                case "5":
-
-
-
-            }
         }
         else {
             request.setAttribute("loginError","用户名和密码错误");
             return "login-simple";
         }
-        // request.setAttribute("loginerror","用户名和密码错误");
-        return "login";
     }
 }

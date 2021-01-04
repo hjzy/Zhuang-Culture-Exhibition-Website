@@ -29,7 +29,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交" />
+    <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/controller/UserControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/controller/UserControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/model/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,10 +107,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SpringBoot-MarkDown" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -221,7 +226,9 @@
       <workItem from="1609658236074" duration="1637000" />
       <workItem from="1609674864538" duration="775000" />
       <workItem from="1609677406012" duration="689000" />
-      <workItem from="1609678119149" duration="395000" />
+      <workItem from="1609678119149" duration="3871000" />
+      <workItem from="1609689997047" duration="424000" />
+      <workItem from="1609692946945" duration="1468000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1596294064396</created>
@@ -307,5 +314,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

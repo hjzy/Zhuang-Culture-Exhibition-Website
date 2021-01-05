@@ -12,4 +12,10 @@ public class MarkDownController {
         return "edit";
     }
 
+    @RequestMapping("/toedit")
+    public String toedit() {
+        return "article-add";
+    }
+
+
 }

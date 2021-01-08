@@ -1,5 +1,6 @@
 package com.train.gdmt.markdown.controller;
 
+import com.train.gdmt.announcement.model.Announcement;
 import com.train.gdmt.markdown.pojo.Article;
 import com.train.gdmt.markdown.service.ArticleService;
 import com.train.gdmt.markdown.utils.FileUtils;
@@ -16,6 +17,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
+
 @Controller
 @RequestMapping("/article")
 public class ArticleController {
@@ -69,4 +75,16 @@ public class ArticleController {
         return modelAndView;
     }
 
+    @RequestMapping("/view/{id}")
+    public ModelAndView viewAnnouncement(@PathVariable(name = "id")int id ,HttpServletRequest request, HttpServletResponse response) {
+        //String announceNum = request.getParameter("num");
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("article-view");
+        Article article = articleService.getArticleById(id);
+        if(article == null) {
+            modelAndView.addObject("article", new Article());
+        }
+        modelAndView.addObject("article", article);
+        return modelAndView;
+    }
 }

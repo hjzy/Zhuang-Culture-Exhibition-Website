@@ -35,6 +35,14 @@ Template Name: Marvin
 
     <!-- Bootstrap table CSS -->
     <link href="vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+         img {
+            display:block;
+            position:relative;
+            margin:auto;
+        }
+    </style>
 </head>
 <body>
 <div class="hk-wrapper hk-vertical-nav">
@@ -180,7 +188,7 @@ Template Name: Marvin
             <!-- Title -->
             <div class="hk-pg-header">
                 <h4 class="hk-pg-title"><span class="pg-title-icon"><span class="feather-icon"><i
-                        data-feather="book"></i></span></span>公告信息</h4>
+                        data-feather="book"></i></span></span>文章欣赏</h4>
             </div>
             <!-- /Title -->
 
@@ -188,9 +196,9 @@ Template Name: Marvin
             <div class="row" id="layout">
                 <div class="col-xl-12">
                     <section class="hk-sec-wrapper">
-                        <h5 th:text="${article.title}" class="hk-sec-title"></h5>
-                        <p th:text="${article.author}"></p>
-                        <div id="test-editormd">
+                        <h4 th:text="${article.title}" class="hk-sec-title" style="text-align: center"></h4>
+                        <p  th:text="${article.author}"  style="text-align: center"></p>
+                        <div id="test-editormd" class="article-content-img">
                             <textarea style="display:none;" th:text="${article.content}"></textarea>
                         </div>
                     </section>

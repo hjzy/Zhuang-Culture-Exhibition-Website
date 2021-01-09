@@ -189,13 +189,13 @@ public class ArticleController {
     }
 
     @RequestMapping("/edit")
-   @ResponseBody
+  // @ResponseBody
     public String updateArticle(Article article) {
         boolean res = articleService.updateArticleById(article);
-        if(res) {
-            return "success";
-        }
-        return "false";
-       // return "redirect:/article/page";
+//        if(res) {
+//            return "success";
+//        }
+//        return "false";
+        return "redirect:/article/page";
     }
 }

@@ -30,18 +30,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article-admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/vendors/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendors/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/vendors/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -135,15 +129,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.GdmtApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,7 +264,8 @@
       <workItem from="1609857959677" duration="4302000" />
       <workItem from="1610023211656" duration="479000" />
       <workItem from="1610109461496" duration="8600000" />
-      <workItem from="1610176510052" duration="6208000" />
+      <workItem from="1610176510052" duration="6478000" />
+      <workItem from="1610192479251" duration="6286000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1596294064396</created>
@@ -355,6 +348,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/MarkDownController.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -36,6 +36,12 @@ public class ArticleController {
     public ArticleController(ArticleService articleService) {
         this.articleService = articleService;
     }
+
+    @RequestMapping("/index")
+    public String toIndex() {
+        return "article-index";
+    }
+
     //提交文章
     @RequestMapping("/publish")
     @ResponseBody
@@ -197,5 +203,71 @@ public class ArticleController {
 //        }
 //        return "false";
         return "redirect:/article/page";
+    }
+
+
+    @RequestMapping("/viewByType")
+    // @ResponseBody
+    public ModelAndView viewByType(@RequestParam(value = "type", defaultValue = "1") Integer type,@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+                             @RequestParam(defaultValue = "5") Integer pageSize) {
+        ModelAndView modelAndView = new ModelAndView();
+        String typeName = null;
+        modelAndView.setViewName("article-view-by-type");
+
+        System.out.println("Page Number>>>>>>>>>>>>" + pageNum);
+        //引入分页查询，在查询之前获取当前页记录
+        PageHelper.startPage(pageNum, pageSize);
+
+        //分页查询
+        List<Article> articleList = articleService.getArticleByType(type);
+
+        //包装查询结果
+        PageInfo pageInfo = new PageInfo(articleList, 1);
+        pageInfo.setList(articleList);
+        //model.addAttribute("sdj1",sdj1);
+        //model.addAttribute("pageInfo", pageInfo);
+        modelAndView.addObject("pageInfo", pageInfo);
+        //model.addAttribute("addUrl", "http://localhost:8081/markdown/toedit");
+       // modelAndView.addObject("addUrl", "/markdown/toedit");
+        //获取当前页
+        modelAndView.addObject("pageNum", pageNum);
+        //获取一页显示的条
+        modelAndView.addObject("pageSize", pageSize);
+        //是否为第一页
+        modelAndView.addObject("isFirstPage", pageInfo.isIsFirstPage());
+        //获得总页数
+        modelAndView.addObject("totalPages", pageInfo.getPages());
+        //是否为最后一页
+        modelAndView.addObject("isLastPage", pageInfo.isIsLastPage());
+
+        modelAndView.addObject("type", type);
+        switch (type)
+        {
+            case 1:
+                typeName="壮学研究";
+                break;
+            case 2:
+                typeName="壮乡见闻";
+                break;
+            case 3:
+                typeName="文化艺术";
+                break;
+            case 4:
+                typeName="历史印记";
+                break;
+            case 5:
+                typeName="民风民俗";
+                break;
+            case 6:
+                typeName="壮学文档";
+                break;
+            case 7:
+                typeName="民族政策";
+                break;
+        }
+
+        modelAndView.addObject("typeName", typeName);
+        return modelAndView;
+       // return "redirect:/article/page";
     }
 }

@@ -13,6 +13,8 @@ public class Article {
 
     private String content;
 
+    private int type;
+
     private String ArticleViewUrl;
 
     private String ArticleDeleteUrl;

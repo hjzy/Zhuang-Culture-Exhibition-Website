@@ -31,6 +31,10 @@ public class ArticleService {
         return articleMapper.getArticleById(id);
     }
 
+    public  List<Article> getArticleByType(int type) {
+        return articleMapper.getArticleByType(type);
+    }
+
     public List<Article> getAllArticle(){
         return articleMapper.getAllArticle();
     }

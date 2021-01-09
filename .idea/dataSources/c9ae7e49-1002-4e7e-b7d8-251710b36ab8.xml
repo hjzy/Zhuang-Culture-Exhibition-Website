@@ -800,7 +800,11 @@
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
     </column>
-    <key id="246" parent="229" name="PRIMARY">
+    <column id="246" parent="229" name="type">
+      <Position>5</Position>
+      <DataType>int(2)|0s</DataType>
+    </column>
+    <key id="247" parent="229" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

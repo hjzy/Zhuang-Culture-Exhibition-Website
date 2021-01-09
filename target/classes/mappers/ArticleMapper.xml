@@ -36,4 +36,9 @@
         </set>
         where id = #{id};
     </update>
+
+    <select id="getArticleByType" resultType="com.train.gdmt.markdown.pojo.Article" parameterType="int">
+        select * from article where type = #{type}
+    </select>
+
 </mapper>

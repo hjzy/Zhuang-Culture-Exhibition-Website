@@ -21,4 +21,6 @@ public interface ArticleMapper {
     public int deleteArticle(int id);
 
     public int updateArticle(Article article);
+
+    public  List<Article> getArticleByType(int type);
 }

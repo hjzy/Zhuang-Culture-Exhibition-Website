@@ -228,6 +228,7 @@ Template Name: Marvin
                                             <tr>
                                                 <th>序号</th>
                                                 <th>标题</th>
+                                                <th>类型</th>
                                                 <th>作者</th>
                                                 <th>操作</th>
                                             </tr>
@@ -238,15 +239,14 @@ Template Name: Marvin
                                             <tr th:each="article:${pageInfo.list}">
                                                 <td th:text="${article.id}"></td>
                                                 <td th:text="${article.title}"></td>
+                                                <td th:text="${article.TypeName}"></td>
                                                 <td th:text="${article.author}"></td>
                                                 <td>
                                                     <a th:href="${article.ArticleViewUrl}" class="mr-25" data-toggle="tooltip" data-original-title="查看"> <i class="icon-eye"></i> </a>
                                                     <a th:href="${article.ArticleEditUrl}" class="mr-25" data-toggle="tooltip" data-original-title="编辑"> <i class="icon-pencil"></i> </a>
                                                     <a th:href="${article.ArticleDeleteUrl}" class ="mr-25" data-toggle="tooltip" data-original-title="删除"> <i class="icon-trash"></i> </a>
-
                                                 </td>
                                             </tr>
-
                                             </tbody>
                                         </table>
                                     </div>

@@ -291,14 +291,12 @@ Template Name: Marvin
                                         <table class="table table-lg mb-0">
                                             <thead>
                                             <tr>
-                                                <th  style="text-align: center">标题</th>
-                                                <th style="text-align: center">作者</th>
+                                                <th>标题</th>
+                                                <th>作者</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-
                                             <tr th:each="article:${articleList1}">
-
                                                 <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
                                                 <td><a th:text="${article.author}"></a></td>
                                             </tr>

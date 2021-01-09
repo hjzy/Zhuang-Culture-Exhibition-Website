@@ -31,14 +31,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/pojo/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/article-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-view-by-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-view-by-type.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +275,7 @@
       <workItem from="1610023211656" duration="479000" />
       <workItem from="1610109461496" duration="8600000" />
       <workItem from="1610176510052" duration="6478000" />
-      <workItem from="1610192479251" duration="18694000" />
+      <workItem from="1610192479251" duration="19680000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1596294064396</created>

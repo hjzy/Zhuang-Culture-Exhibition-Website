@@ -35,6 +35,11 @@ public class ArticleService {
         return articleMapper.getArticleByType(type);
     }
 
+
+    public  List<Article> getArticleByTypeLimitSize(int type,int size) {
+        return articleMapper.getArticleByTypeLimitSize(type,size);
+    }
+
     public List<Article> getAllArticle(){
         return articleMapper.getAllArticle();
     }

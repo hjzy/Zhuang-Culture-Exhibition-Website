@@ -37,10 +37,38 @@ public class ArticleController {
         this.articleService = articleService;
     }
 
+
+
+
     @RequestMapping("/index")
-    public String toIndex() {
-        return "article-index";
+    // @ResponseBody
+    public ModelAndView initIndex() {
+        ModelAndView modelAndView = new ModelAndView();
+
+        modelAndView.setViewName("article-index");
+
+        List<Article> articleList1 = articleService.getArticleByTypeLimitSize(1,6);
+//        List<Article> articleList2 = articleService.getArticleByTypeLimitSize(2,6);
+//        List<Article> articleList3 = articleService.getArticleByTypeLimitSize(3,6);
+//        List<Article> articleList4 = articleService.getArticleByTypeLimitSize(4,6);
+//        List<Article> articleList5 = articleService.getArticleByTypeLimitSize(5,6);
+//        List<Article> articleList6 = articleService.getArticleByTypeLimitSize(6,6);
+
+
+        modelAndView.addObject("articleList1", articleList1);
+//        modelAndView.addObject("articleList2", articleList2);
+//        modelAndView.addObject("articleList3", articleList3);
+//        modelAndView.addObject("articleList4", articleList4);
+//        modelAndView.addObject("articleList5", articleList5);
+//        modelAndView.addObject("articleList6", articleList6);
+
+        return modelAndView;
     }
+
+
+
+
+
 
     //提交文章
     @RequestMapping("/publish")
@@ -191,7 +219,6 @@ public class ArticleController {
         }
         modelAndView.addObject("article", article);
         return modelAndView;
-
     }
 
     @RequestMapping("/edit")

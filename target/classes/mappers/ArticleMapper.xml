@@ -41,4 +41,8 @@
         select * from article where type = #{type}
     </select>
 
+    <select id="getArticleByTypeLimitSize" resultType="com.train.gdmt.markdown.pojo.Article" parameterType="int">
+        select * from article where type = #{type} limit #{size}
+    </select>
+
 </mapper>

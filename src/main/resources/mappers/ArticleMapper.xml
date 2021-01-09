@@ -8,4 +8,32 @@
     <select id="getArticleById" resultType="com.train.gdmt.markdown.pojo.Article" parameterType="int">
         select * from article where id = #{id};
     </select>
+
+    <select id="getAllArticle" resultType="com.train.gdmt.markdown.pojo.Article">
+        select * from article
+    </select>
+
+    <select id="searchArticle" resultType="com.train.gdmt.markdown.pojo.Article">
+        select * from article  where title LIKE '%${titleStr}%'
+    </select>
+
+    <delete id="deleteArticle" parameterType="int">
+        delete from article where id = #{id};
+    </delete>
+
+    <update id="updateArticle" parameterType="int">
+       update article
+        <set >
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="author != null">
+                author = #{author},
+            </if>
+            <if test="content != null">
+                content = #{content},
+            </if>
+        </set>
+        where id = #{id};
+    </update>
 </mapper>

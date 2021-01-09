@@ -1,5 +1,8 @@
 package com.train.gdmt.markdown.pojo;
 
+import lombok.Data;
+
+@Data
 public class Article {
 
     private int id;
@@ -9,6 +12,13 @@ public class Article {
     private String author;
 
     private String content;
+
+    private String ArticleViewUrl;
+
+    private String ArticleDeleteUrl;
+
+    private String ArticleEditUrl;
+
 
 
     public int getId() {
@@ -42,4 +52,21 @@ public class Article {
     public void setContent(String content) {
         this.content = content;
     }
+
+
+    public String getArticleViewUrl() {
+        ArticleViewUrl = "/article/view/" + id;
+        return ArticleViewUrl;
+    }
+
+    public String getArticleDeleteUrl() {
+        ArticleDeleteUrl = "/article/delete/" + id;
+        return ArticleDeleteUrl;
+    }
+
+    public String getArticleEditUrl() {
+        ArticleEditUrl = "/article/toEdit/" + id;
+        return ArticleEditUrl;
+    }
+
 }

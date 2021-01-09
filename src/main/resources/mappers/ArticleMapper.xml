@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.train.gdmt.markdown.mapper.ArticleMapper">
     <insert id="insertArticle" parameterType="com.train.gdmt.markdown.pojo.Article">
-        insert into article (title, author, content) values(#{title}, #{author}, #{content});
+        insert into article (title, author, content,type) values(#{title}, #{author}, #{content},#{type});
     </insert>
 
     <select id="getArticleById" resultType="com.train.gdmt.markdown.pojo.Article" parameterType="int">
@@ -21,7 +21,7 @@
         delete from article where id = #{id};
     </delete>
 
-    <update id="updateArticle" parameterType="int">
+    <update id="updateArticle">
        update article
         <set >
             <if test="title != null">
@@ -32,6 +32,9 @@
             </if>
             <if test="content != null">
                 content = #{content},
+            </if>
+            <if test="type != null">
+                type = #{type},
             </if>
         </set>
         where id = #{id};

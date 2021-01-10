@@ -30,32 +30,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/头图1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/头图2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/头图3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/01bda684-d0b1-4369-9d76-c1cd857efa54.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/01f25daa-b07c-4b40-8359-ea3ed8332f59.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/0c92939e-9693-4d99-91e5-07ad7ee29578.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/0eabc8ea-f619-4f9f-b977-55394f3e7e1a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/2a7f4eb6-99a3-4d35-a2bb-7a6350d6f66d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/339ff834-20b0-42a9-8cb0-1ea776b387be.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/33b8ec83-c746-4b8f-8e1c-6b94790f80aa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/55d24206-bc12-4b0c-86f4-2282bf6be2e6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/66331351-5642-4fa3-a46e-dca892b90cca.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/674fc62b-9444-4e57-8106-73c022af5633.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/694f3f62-e4f0-4d06-b2e8-33c75be6ec40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/80cfe074-bad3-439e-b579-22cd890ff232.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/9dea06d9-f635-4cc6-9b16-66ec616ff8a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/a420607e-eea2-4dbc-9f10-e0c81f16fa0f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/de1fef8a-f2c3-4e26-ad63-2718abf11af9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/e6da7da5-372a-417a-b07d-acce02cadbcc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/f67b2f33-f0fb-457a-a215-0f7cf02163db.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/background2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/头图1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/头图2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/头图3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-view-by-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-view-by-type.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/article-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-view-by-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-view-by-type.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,31 +121,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/picture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/picture" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Develop_Project\gdmt\src\main\resources\static\picture" />
+      <recent name="F:\Develop_Project\gdmt\src\main\resources\templates\picture" />
       <recent name="F:\Develop_Project\gdmt\src\main\resources\templates" />
+      <recent name="F:\Develop_Project\gdmt\src\main\resources\static\picture" />
       <recent name="F:\Develop_Project\gdmt\src\main\resources" />
       <recent name="F:\Develop_Project\gdmt\src\main\resources\static" />
-      <recent name="F:\Develop_Project\gdmt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Develop_Project\gdmt\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.GdmtApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -295,7 +280,7 @@
       <workItem from="1610192479251" duration="21300000" />
       <workItem from="1610259953555" duration="2850000" />
       <workItem from="1610268048639" duration="638000" />
-      <workItem from="1610279864179" duration="7113000" />
+      <workItem from="1610279864179" duration="8674000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1596294064396</created>

@@ -196,8 +196,8 @@ Template Name: Marvin
             <div class="row" id="layout">
                 <div class="col-xl-12">
                     <section class="hk-sec-wrapper">
-                        <h5 class="hk-sec-title" _msthash="1845870" _msttexthash="22429342">引导旋转木马</h5>
-                        <p class="mb-40" _msthash="1812525" _msttexthash="346261838">旋转木马可处理一系列图像、文本或自定义标记。它还包括对以前/下一个控件和指标的支持。</p>
+                        <h5 class="hk-sec-title" _msthash="1845870" _msttexthash="22429342">八桂新闻</h5>
+                        <p class="mb-40" _msthash="1812525" _msttexthash="346261838">展现八桂新景象</p>
                         <div class="row">
                             <div class="col-sm">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -208,24 +208,24 @@ Template Name: Marvin
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item carousel-item-next carousel-item-left">
-                                            <img class="d-block w-100" src="dist/img/slide1.jpg" alt="First slide">
+                                            <a href="article/view/62"> <img class="d-block w-100" src="picture/头图1.jpg" alt="First slide" ></a>
                                             <div class="carousel-caption d-none d-md-block">
-                                                <h5 class="text-white" _msthash="1682720" _msttexthash="29873714">第一张幻灯片标签</h5>
-                                                <p _msthash="1651663" _msttexthash="40138930">这是内容段落足以说。</p>
+                                                <h5 class="text-white" _msthash="1682720" _msttexthash="29873714">南国四月美如画 八桂春光引客来</h5>
+                                                <p _msthash="1651663" _msttexthash="40138930">吴丽萍</p>
                                             </div>
                                         </div>
                                         <div class="carousel-item" _mstvisible="0">
-                                            <img class="d-block w-100" src="dist/img/slide2.jpg" alt="Second slide" _mstvisible="1">
+                                            <a href="article/view/63"> <img class="d-block w-100" src="picture/头图2.jpg" alt="First slide"></a>
                                             <div class="carousel-caption d-none d-md-block" _mstvisible="1">
-                                                <h5 class="text-white" _msthash="1683279" _msttexthash="29888274" _mstvisible="2">第二张幻灯片标签</h5>
-                                                <p _msthash="1652222" _msttexthash="40138930" _mstvisible="2">这是内容段落足以说。</p>
+                                                <h5 class="text-white" _msthash="1683279" _msttexthash="29888274" _mstvisible="2">桂风壮韵显魅力 民族文化展风采</h5>
+                                                <p _msthash="1652222" _msttexthash="40138930" _mstvisible="2">林雪娜</p>
                                             </div>
                                         </div>
                                         <div class="carousel-item active carousel-item-left" _mstvisible="0">
-                                            <img class="d-block w-100" src="dist/img/slide3.jpg" alt="Third slide" _mstvisible="1">
+                                            <a href="article/view/64"> <img class="d-block w-100" src="picture/头图3.jpg" alt="First slide"></a>
                                             <div class="carousel-caption d-none d-md-block" _mstvisible="1">
-                                                <h5 class="text-white" _msthash="1683838" _msttexthash="29874650" _mstvisible="2">第三张幻灯片标签</h5>
-                                                <p _msthash="1652781" _msttexthash="40138930" _mstvisible="2">这是内容段落足以说。</p>
+                                                <h5 class="text-white" _msthash="1683838" _msttexthash="29874650" _mstvisible="2">壮乡歌潮连四海 八桂友谊传五洲</h5>
+                                                <p _msthash="1652781" _msttexthash="40138930" _mstvisible="2">李湘萍</p>
                                             </div>
                                         </div>
                                     </div>
@@ -249,7 +249,7 @@ Template Name: Marvin
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="card mb-20">
-                                            <img class="card-img-top" src="dist/img/cropper.jpg" alt="Card image cap">
+                                           <a > <img class="card-img-top" src="dist/img/cropper.jpg" alt="Card image cap"></a>
                                             <div class="card-body">
                                                 <h5 class="card-title" _msthash="4852393" _msttexthash="13567008">图像顶部</h5>
                                                 <p class="card-text" _msthash="4798456" _msttexthash="305618976">这是一张更宽的卡片，下面支持文本，作为其他内容的自然输入。此内容长一点。</p>
@@ -282,7 +282,7 @@ Template Name: Marvin
                         </div>
                     </section>
                     <section class="hk-sec-wrapper" >
-                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewArticleByType?type=1">壮学研究</a></h5>
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=1">壮学研究</a></h5>
                         <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">研究和传承壮学文化</font></p>
                         <div class="row">
                             <div class="col-sm">
@@ -297,6 +297,162 @@ Template Name: Marvin
                                             </thead>
                                             <tbody>
                                             <tr th:each="article:${articleList1}">
+                                                <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
+                                                <td><a th:text="${article.author}"></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="hk-sec-wrapper" >
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=2">壮乡见闻</a></h5>
+                        <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">记录壮乡见闻</font></p>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-lg mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>作者</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr th:each="article:${articleList2}">
+                                                <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
+                                                <td><a th:text="${article.author}"></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="hk-sec-wrapper" >
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=2">文化艺术</a></h5>
+                        <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">壮乡文化永流传</font></p>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-lg mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>作者</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr th:each="article:${articleList3}">
+                                                <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
+                                                <td><a th:text="${article.author}"></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="hk-sec-wrapper" >
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=2">历史印记</a></h5>
+                        <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">壮乡历史源远流长</font></p>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-lg mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>作者</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr th:each="article:${articleList4}">
+                                                <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
+                                                <td><a th:text="${article.author}"></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="hk-sec-wrapper" >
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=2">民风民俗</a></h5>
+                        <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">壮乡民俗花样多</font></p>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-lg mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>作者</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr th:each="article:${articleList5}">
+                                                <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
+                                                <td><a th:text="${article.author}"></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="hk-sec-wrapper" >
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=2">壮学文档</a></h5>
+                        <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">壮学文档经典流传</font></p>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-lg mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>作者</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr th:each="article:${articleList6}">
+                                                <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
+                                                <td><a th:text="${article.author}"></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="hk-sec-wrapper" >
+                        <h5 class="hk-sec-title"   style="text-align: center" _msthash="1845870" _msttexthash="11794705"><a href="/article/viewByType?type=2">民族政策</a></h5>
+                        <p class="mb-25" style="text-align: center"><font _mstmutation="1" _msthash="1812525" _msttexthash="225849260">国家支持壮乡发展</font></p>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-lg mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th>标题</th>
+                                                <th>作者</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr th:each="article:${articleList7}">
                                                 <td><a th:text="${article.title}" th:href="${article.getArticleViewUrl()}"></a></td>
                                                 <td><a th:text="${article.author}"></a></td>
                                             </tr>

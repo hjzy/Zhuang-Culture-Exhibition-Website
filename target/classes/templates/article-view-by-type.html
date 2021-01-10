@@ -225,24 +225,20 @@ Template Name: Marvin
                                             <thead>
 
                                             <tr>
-                                                <th>序号</th>
+
                                                 <th>标题</th>
                                                 <th>作者</th>
-                                                <th>操作</th>
+
                                             </tr>
                                             </thead>
                                             <tbody>
 
 
                                             <tr th:each="article:${pageInfo.list}">
-                                                <td th:text="${article.id}"></td>
-                                                <td th:text="${article.title}"></td>
-                                                <td th:text="${article.author}"></td>
-                                                <td>
-                                                    <a th:href="${article.ArticleViewUrl}" class="mr-25" data-toggle="tooltip" data-original-title="查看"> <i class="icon-eye"></i> </a>
-                                                </td>
-                                            </tr>
 
+                                                <td ><a th:text="${article.title}" th:href="${article.ArticleViewUrl}">  </a></td>
+                                                <td ><a th:text="${article.author}" ></a></td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>

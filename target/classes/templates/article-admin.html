@@ -11,7 +11,7 @@ Template Name: Marvin
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>公告</title>
+    <title>八桂壮韵|管理</title>
     <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
 
     <!-- Favicon -->
@@ -42,7 +42,11 @@ Template Name: Marvin
     <!-- Toggles CSS -->
     <link href="vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
     <link href="vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
-
+    <style>
+        .hk-pg-wrapper{
+            background: url(picture/background3.png);
+        }
+    </style>
     <!-- Custom CSS -->
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -140,87 +144,6 @@ Template Name: Marvin
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                       data-target="#content_drp">
-                                        <!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
-                                        <span class="nav-link-text">文化艺术</span>
-                                    </a>
-                                    <ul id="content_drp" class="nav flex-column collapse collapse-level-1">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link"
-                                                       href="/article/viewByType?type=3">文化艺术</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                       data-target="#utilities_drp">
-                                        <!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
-                                        <span class="nav-link-text">历史印记</span>
-                                    </a>
-                                    <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link"   href="/article/viewByType?type=4">历史印记</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                       data-target="#utilities_drp">
-                                        <!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
-                                        <span class="nav-link-text">民风民俗</span>
-                                    </a>
-                                    <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link"   href="/article/viewByType?type=5">民风民俗</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                       data-target="#utilities_drp">
-                                        <!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
-                                        <span class="nav-link-text">壮学文档</span>
-                                    </a>
-                                    <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link"   href="/article/viewByType?type=6">壮学文档</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                       data-target="#utilities_drp">
-                                        <!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
-                                        <span class="nav-link-text">民族政策</span>
-                                    </a>
-                                    <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link"   href="/article/viewByType?type=7">民族政策</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
                             </ul>
                         </ul>
                     </div>
@@ -241,8 +164,8 @@ Template Name: Marvin
         <!-- Breadcrumb -->
         <nav class="hk-breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-light bg-transparent">
-                <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Basic Table</li>
+                <li class="breadcrumb-item"><a href="#">管理</a></li>
+                <li class="breadcrumb-item active" aria-current="page">文章管理</li>
             </ol>
         </nav>
         <!-- /Breadcrumb -->
@@ -251,7 +174,7 @@ Template Name: Marvin
         <div class="container">
             <!-- Title -->
             <div class="hk-pg-header">
-                <h4 class="hk-pg-title"><span class="pg-title-icon"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg></span></span>公告信息</h4>
+                <h4 class="hk-pg-title"><span class="pg-title-icon"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg></span></span>文章管理</h4>
             </div>
             <!-- /Title -->
 

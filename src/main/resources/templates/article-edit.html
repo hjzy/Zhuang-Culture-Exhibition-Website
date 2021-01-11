@@ -7,7 +7,7 @@ Template Name: Marvin
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>管理平台</title>
+    <title>八桂壮韵|文章编辑</title>
     <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework"/>
     <base th:href="@{/}">
     <!-- Favicon -->
@@ -29,7 +29,11 @@ Template Name: Marvin
 
     <!-- Toastr CSS -->
     <link href="vendors/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
-
+    <style>
+        .hk-pg-wrapper{
+            background: url(picture/background3.png);
+        }
+    </style>
     <!-- Custom CSS -->
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -49,12 +53,29 @@ Template Name: Marvin
 
         <!-- Top Navbar -->
         <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
-            <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span
-                    class="feather-icon"><i data-feather="menu"></i></span></a>
-            <a class="navbar-brand font-weight-700" href="index.html">
-                国电煤炭交易平台
+            <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
+            <a class="navbar-brand font-weight-700" href="/article/index">
+                八桂壮韵文化赏析
             </a>
+            <ul class="navbar-nav hk-navbar-content">
+                <li class="nav-item">
+                    <a id="navbar_search_btn" class="nav-link nav-link-hover" href="/article/search"><span class="feather-icon"><i data-feather="search"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="settings_toggle_btn" class="nav-link nav-link-hover" href="/article/page"><span class="feather-icon"><i data-feather="settings"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link nav-link-hover" href="/user/toLogin"><span class="feather-icon"><i data-feather="users"></i></span></a>
+                </li>
+            </ul>
         </nav>
+        <form role="search" class="navbar-search">
+            <div class="position-relative">
+                <a href="javascript:void(0);" class="navbar-search-icon"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span></a>
+                <input type="text" name="example-input1-group2" class="form-control" placeholder="Type here to Search">
+                <a id="navbar_search_close" class="navbar-search-close" href="#"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span></a>
+            </div>
+        </form>
 
         <!-- /Top Navbar -->
 
@@ -66,7 +87,7 @@ Template Name: Marvin
                 <div class="navbar-nav-wrap">
                     <ul class="navbar-nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#dash_drp">
+                            <a class="nav-link"  data-toggle="collapse" data-target="#dash_drp">
                                 <span class="feather-icon"><i data-feather="home"></i></span>
                                 <span class="nav-link-text">首页</span>
                             </a>
@@ -74,22 +95,22 @@ Template Name: Marvin
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" th:href="@{'/indexPage/toIndex'}">待办事项</a>
+                                            <a class="nav-link" th:href="@{'/article/index'}">返回首页</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#auth_drp">
-                                <span class="feather-icon"><i data-feather="file-text"></i></span>
-                                <span class="nav-link-text">采购申请管理</span>
+                            <a class="nav-link" href="/article/viewByType?type=1" data-toggle="collapse" data-target="#auth_drp">
+                                <!--                                <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                <span class="nav-link-text">文章管理</span>
                             </a>
                             <ul id="auth_drp" class="nav flex-column collapse collapse-level-1">
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="http://localhost:8081/index/tofindPurchase">采购审批</a>
+                                            <a class="nav-link" href="/article/page">文章管理</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -100,66 +121,15 @@ Template Name: Marvin
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
                                    data-target="#Components_drp">
-                                    <span class="feather-icon"><i data-feather="edit"></i></span>
-                                    <span class="nav-link-text">采购执行管理</span>
+                                    <!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">文章添加</span>
                                 </a>
                                 <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
                                     <li class="nav-item">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
                                                 <a class="nav-link"
-                                                   href="http://localhost:8081/purchasemanage/page">中标下达</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/purchasemanage/winOrder">中标审核</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                   data-target="#content_drp">
-                                    <span class="feather-icon"><i data-feather="type"></i></span>
-                                    <span class="nav-link-text">供应商管理</span>
-                                </a>
-                                <ul id="content_drp" class="nav flex-column collapse collapse-level-1">
-                                    <li class="nav-item">
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <a class="nav-link"
-                                                   href="http://localhost:8081/supplier/findsome">查看合作供应商</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/contract/page">查看长协交易</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/apply/applypage">电厂申请审核</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/annual/annualpage">年度评价</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                                   data-target="#utilities_drp">
-                                    <span class="feather-icon"><i data-feather="users"></i></span>
-                                    <span class="nav-link-text">账户管理</span>
-                                </a>
-                                <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
-                                    <li class="nav-item">
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/user/viewUserByCookie">个人信息</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/user/tofiliale">企业维护</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/user/findAllUser">用户管理</a>
+                                                   href="/markdown/toedit">文章添加</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -170,140 +140,21 @@ Template Name: Marvin
                 </div>
             </div>
         </nav>
-
         <!-- /Vertical Nav -->
 
 
     </div>
     <!-- /HK Wrapper -->
     <!-- 左部菜单栏 -->
-    <nav class="hk-nav hk-nav-dark">
-        <a href="javascript:void(0);" id="hk_nav_close" class="hk-nav-close"><span class="feather-icon"><i
-                data-feather="x"></i></span></a>
-        <div class="nicescroll-bar">
-            <div class="navbar-nav-wrap">
-                <hr class="nav-separator">
-                <div class="nav-header">
-                    <span>主页</span>
-                    <span>UI</span>
-                </div>
 
-                <ul class="navbar-nav flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#dash_drp">
-                            <span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-activity"><polyline
-                                    points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></span>
-                            <span class="nav-link-text">事务中心</span>
-                        </a>
-                        <ul id="dash_drp" class="nav flex-column collapse collapse-level-1">
-                            <li class="nav-item">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="/index.html">待办事项</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#tables_drp">
-                            <span class="feather-icon"><i data-feather="list"></i></span>
-                            <span class="nav-link-text">采购申请管理</span>
-                        </a>
-                        <ul id="tables_drp" class="nav flex-column collapse collapse-level-1">
-                            <li class="nav-item">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="basic-table.html">采购执行</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
-                           data-target="#tables_drp1">
-                            <span class="feather-icon"><i data-feather="list"></i></span>
-                            <span class="nav-link-text">采购执行管理</span>
-                        </a>
-                        <ul id="tables_drp1" class="nav flex-column collapse collapse-level-1">
-                            <li class="nav-item">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/basic-table.html">中标下达</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/basic-table.html">中标审核</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#pages_drp">
-                            <span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-file-text"><path
-                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline
-                                    points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line
-                                    x1="16" y1="17" x2="8" y2="17"></line><polyline
-                                    points="10 9 9 9 8 9"></polyline></svg></span>
-                            <span class="nav-link-text">供应商管理</span>
-                        </a>
-                        <ul id="pages_drp" class="nav flex-column collapse collapse-level-1">
-                            <li class="nav-item">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/前端/profile.html">查看合作供应商</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/invoice.html">供应商申请审核</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/gallery.html">电厂申请审核</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#charts_drp">
-                            <span class="feather-icon"><i data-feather="pie-chart"></i></span>
-                            <span class="nav-link-text">账户管理</span>
-                        </a>
-                        <ul id="charts_drp" class="nav flex-column collapse collapse-level-1">
-                            <li class="nav-item">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/line-charts.html">个人信息</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/area-charts.html">企业维护</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/前端/bar-charts.html">用户管理</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-    </nav>
 
 
     <div class="hk-pg-wrapper" style="min-height: 1338px;">
         <!-- Breadcrumb -->
         <nav class="hk-breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-light bg-transparent">
-                <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Input Groups</li>
+                <li class="breadcrumb-item"><a href="#">管理</a></li>
+                <li class="breadcrumb-item active" aria-current="page">文章编辑</li>
             </ol>
         </nav>
         <!-- /Breadcrumb -->

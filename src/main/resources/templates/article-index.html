@@ -56,12 +56,29 @@ Template Name: Marvin
 
         <!-- Top Navbar -->
         <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
-            <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span
-                    class="feather-icon"><i data-feather="menu"></i></span></a>
-            <a class="navbar-brand font-weight-700" href="index.html">
-                国电煤炭交易平台
+            <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
+            <a class="navbar-brand font-weight-700" href="/article/index">
+                八桂壮韵文化赏析
             </a>
+            <ul class="navbar-nav hk-navbar-content">
+                <li class="nav-item">
+                    <a id="navbar_search_btn" class="nav-link nav-link-hover" href="/article/search"><span class="feather-icon"><i data-feather="search"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="settings_toggle_btn" class="nav-link nav-link-hover" href="/article/page"><span class="feather-icon"><i data-feather="settings"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link nav-link-hover" href="/user/toLogin"><span class="feather-icon"><i data-feather="users"></i></span></a>
+                </li>
+            </ul>
         </nav>
+        <form role="search" class="navbar-search">
+            <div class="position-relative">
+                <a href="javascript:void(0);" class="navbar-search-icon"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span></a>
+                <input type="text" name="example-input1-group2" class="form-control" placeholder="Type here to Search">
+                <a id="navbar_search_close" class="navbar-search-close" href="#"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span></a>
+            </div>
+        </form>
 
         <!-- /Top Navbar -->
 
@@ -73,7 +90,7 @@ Template Name: Marvin
                 <div class="navbar-nav-wrap">
                     <ul class="navbar-nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#dash_drp">
+                            <a class="nav-link"  data-toggle="collapse" data-target="#dash_drp">
                                 <span class="feather-icon"><i data-feather="home"></i></span>
                                 <span class="nav-link-text">首页</span>
                             </a>
@@ -81,22 +98,22 @@ Template Name: Marvin
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" th:href="@{'/indexPage/toIndex'}">待办事项</a>
+                                            <a class="nav-link" th:href="@{'/article/index'}">返回首页</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#auth_drp">
-                                <span class="feather-icon"><i data-feather="file-text"></i></span>
-                                <span class="nav-link-text">采购申请管理</span>
+                            <a class="nav-link" href="/article/viewByType?type=1" data-toggle="collapse" data-target="#auth_drp">
+<!--                                <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                <span class="nav-link-text">壮学研究</span>
                             </a>
                             <ul id="auth_drp" class="nav flex-column collapse collapse-level-1">
                                 <li class="nav-item">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="http://localhost:8081/index/tofindPurchase">采购审批</a>
+                                            <a class="nav-link" href="/article/viewByType?type=1">壮学研究</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -107,18 +124,15 @@ Template Name: Marvin
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
                                    data-target="#Components_drp">
-                                    <span class="feather-icon"><i data-feather="edit"></i></span>
-                                    <span class="nav-link-text">采购执行管理</span>
+<!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">壮乡见闻</span>
                                 </a>
                                 <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
                                     <li class="nav-item">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
                                                 <a class="nav-link"
-                                                   href="http://localhost:8081/purchasemanage/page">中标下达</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/purchasemanage/winOrder">中标审核</a>
+                                                   href="/article/viewByType?type=2">壮乡见闻</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -127,24 +141,15 @@ Template Name: Marvin
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
                                    data-target="#content_drp">
-                                    <span class="feather-icon"><i data-feather="type"></i></span>
-                                    <span class="nav-link-text">供应商管理</span>
+<!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">文化艺术</span>
                                 </a>
                                 <ul id="content_drp" class="nav flex-column collapse collapse-level-1">
                                     <li class="nav-item">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
                                                 <a class="nav-link"
-                                                   href="http://localhost:8081/supplier/findsome">查看合作供应商</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/contract/page">查看长协交易</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/apply/applypage">电厂申请审核</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/annual/annualpage">年度评价</a>
+                                                   href="/article/viewByType?type=3">文化艺术</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -153,20 +158,62 @@ Template Name: Marvin
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
                                    data-target="#utilities_drp">
-                                    <span class="feather-icon"><i data-feather="users"></i></span>
-                                    <span class="nav-link-text">账户管理</span>
+<!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">历史印记</span>
                                 </a>
                                 <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
                                     <li class="nav-item">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/user/viewUserByCookie">个人信息</a>
+                                                <a class="nav-link"   href="/article/viewByType?type=4">历史印记</a>
                                             </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
+                                   data-target="#utilities_drp">
+<!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">民风民俗</span>
+                                </a>
+                                <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
+                                    <li class="nav-item">
+                                        <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/user/tofiliale">企业维护</a>
+                                                <a class="nav-link"   href="/article/viewByType?type=5">民风民俗</a>
                                             </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
+                                   data-target="#utilities_drp">
+<!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">壮学文档</span>
+                                </a>
+                                <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
+                                    <li class="nav-item">
+                                        <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="http://localhost:8081/user/findAllUser">用户管理</a>
+                                                <a class="nav-link"   href="/article/viewByType?type=6">壮学文档</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
+                                   data-target="#utilities_drp">
+<!--                                    <span class="feather-icon"><i data-feather="file-text"></i></span>-->
+                                    <span class="nav-link-text">民族政策</span>
+                                </a>
+                                <ul id="utilities_drp" class="nav flex-column collapse collapse-level-1">
+                                    <li class="nav-item">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link"   href="/article/viewByType?type=7">民族政策</a>
                                             </li>
                                         </ul>
                                     </li>

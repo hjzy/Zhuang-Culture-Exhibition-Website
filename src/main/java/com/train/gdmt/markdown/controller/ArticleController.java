@@ -119,12 +119,16 @@ public class ArticleController {
     public ModelAndView viewArticle(@PathVariable(name = "id")int id ,HttpServletRequest request, HttpServletResponse response) {
         //String announceNum = request.getParameter("num");
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("article-view");
+
         Article article = articleService.getArticleById(id);
         if(article == null) {
-            modelAndView.addObject("article", new Article());
+            //modelAndView.addObject("article", new Article());
+            modelAndView.setViewName("404");
         }
-        modelAndView.addObject("article", article);
+        else {
+            modelAndView.setViewName("article-view");
+            modelAndView.addObject("article", article);
+        }
         return modelAndView;
     }
     //在视图中显示所有文章，并进行分页

@@ -11,7 +11,6 @@ import java.util.Date;
 
 @Data//自动生成set和get方法
 public class User {
-
     private int id;
     private String userId;
     private String pwd;

@@ -37,7 +37,7 @@ public class UserControl {
         if(DigestUtils.md5Hex(password).equals(DigestUtils.md5Hex(loginUser.getPwd())))
         {
             session.setAttribute("loginUser",loginUser);
-                    return "redirect:/announcement/page";
+                    return "redirect:/article/page";
         }
         else {
             request.setAttribute("loginError","用户名和密码错误");

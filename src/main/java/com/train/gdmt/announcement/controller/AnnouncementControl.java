@@ -143,7 +143,7 @@ public class AnnouncementControl {
         System.out.println(viewAnnouncement);
         request.setAttribute("announcement", viewAnnouncement);
         request.setAttribute("num", announceNum);
-        return "article-add";
+        return "announcement-add";
     }
 
     @RequestMapping("edit")

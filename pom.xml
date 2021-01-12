@@ -132,6 +132,19 @@
             <version>2.3.2.RELEASE</version>
         </dependency>
 
+<!--        &lt;!&ndash; swagger工具包 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-swagger2</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
+        <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-boot-starter</artifactId>
+        <version>3.0.0</version>
+        </dependency>
+
+
     </dependencies>
 
 

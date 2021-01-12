@@ -30,17 +30,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/二图1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/二图2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/picture/二图3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/12dec20b-1abc-4608-b3ff-ebdac2c000cb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/61f15ef0-6694-4479-a362-594d3f9e18a5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/f2f59615-8318-4e00-92d3-b2adfd887c06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/二图1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/二图2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/picture/二图3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_83.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_boot_starter_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_data_rest_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_oas_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webmvc_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdmt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gdmt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/GdmtApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/GdmtApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/controller/UserControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/controller/UserControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/user/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/article-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +69,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -140,19 +158,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Develop_Project\gdmt\src\main\resources\templates" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.train.gdmt.swagger" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.GdmtApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AnnouncementDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gdmt" />
       <extension name="coverage">
@@ -283,7 +293,9 @@
       <workItem from="1610268048639" duration="638000" />
       <workItem from="1610279864179" duration="8674000" />
       <workItem from="1610290912329" duration="9115000" />
-      <workItem from="1610372376759" duration="5701000" />
+      <workItem from="1610372376759" duration="6085000" />
+      <workItem from="1610424818741" duration="2936000" />
+      <workItem from="1610427801504" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1596294064396</created>

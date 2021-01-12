@@ -7,6 +7,8 @@ import com.train.gdmt.markdown.pojo.Article;
 import com.train.gdmt.markdown.service.ArticleService;
 import com.train.gdmt.markdown.utils.FileUtils;
 import com.alibaba.fastjson.JSONObject;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +27,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
+@Api
 @Controller
 @RequestMapping("/article")
 public class ArticleController {
@@ -42,6 +45,7 @@ public class ArticleController {
 
     @RequestMapping("/index")
     // @ResponseBody
+    @ApiOperation(value = "首页初始化",notes = "")
     public ModelAndView initIndex() {
         ModelAndView modelAndView = new ModelAndView();
 

@@ -48,4 +48,10 @@
         select * from article where type = #{type} limit #{size}
     </select>
 
+
+    <select id="getArticleCountMapForEcharts" resultType="com.train.gdmt.markdown.pojo.Count">
+        select type,COUNT(type) as count
+        from article
+        group by type
+    </select>
 </mapper>

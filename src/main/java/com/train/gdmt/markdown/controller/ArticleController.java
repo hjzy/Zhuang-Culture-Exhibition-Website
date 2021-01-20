@@ -1,15 +1,19 @@
 package com.train.gdmt.markdown.controller;
 
+
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.train.gdmt.announcement.model.Announcement;
 import com.train.gdmt.markdown.pojo.Article;
+import com.train.gdmt.markdown.pojo.Count;
 import com.train.gdmt.markdown.service.ArticleService;
 import com.train.gdmt.markdown.utils.FileUtils;
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+
+//import org.springframework.boot.configurationprocessor.json.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,6 +30,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Map;
 
 @Api
 @Controller
@@ -73,10 +78,6 @@ public class ArticleController {
     }
 
 
-
-
-
-
     //提交文章
     @RequestMapping("/publish")
     @ResponseBody
@@ -118,6 +119,7 @@ public class ArticleController {
         modelAndView.addObject("article", article);
         return modelAndView;
     }
+
     //在视图中显示图文内容
     @RequestMapping("/view/{id}")
     public ModelAndView viewArticle(@PathVariable(name = "id")int id ,HttpServletRequest request, HttpServletResponse response) {
@@ -135,6 +137,7 @@ public class ArticleController {
         }
         return modelAndView;
     }
+
     //在视图中显示所有文章，并进行分页
     @RequestMapping("/page")
     public ModelAndView page(Model model, @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
@@ -171,7 +174,7 @@ public class ArticleController {
         return modelAndView;
     }
 
-//    搜索
+    //搜索
     @RequestMapping("/search")
     public ModelAndView search(HttpServletRequest request,Model model, @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                              @RequestParam(defaultValue = "5") Integer pageSize) {
@@ -206,9 +209,9 @@ public class ArticleController {
 
         return modelAndView;
     }
-//    删除
+    //删除
     @RequestMapping("/delete/{id}")
-  //  @ResponseBody
+    //  @ResponseBody
     public String deleteArticleById(@PathVariable(name = "id")int id) {
        // ModelAndView modelAndView = new ModelAndView();
         boolean res = articleService.deleteArticleById(id);
@@ -233,13 +236,9 @@ public class ArticleController {
     }
 
     @RequestMapping("/edit")
-  // @ResponseBody
+
     public String updateArticle(Article article) {
         boolean res = articleService.updateArticleById(article);
-//        if(res) {
-//            return "success";
-//        }
-//        return "false";
         return "redirect:/article/page";
     }
 
@@ -309,4 +308,51 @@ public class ArticleController {
         return modelAndView;
        // return "redirect:/article/page";
     }
+
+
+//    @RequestMapping("getEchartsPie")
+//    public ModelAndView getEchartsPieJson(){
+//        ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.setViewName("article-charts");
+//        List<Count> charts=articleService.getArticleCountMapForEcharts();
+//        JSONArray jsonArray = new JSONArray();
+//
+//        for(Count c:charts){
+//            JSONObject json=new JSONObject();
+//            json.put("name",c.getTypeName());
+//            json.put("value",c.getCount());
+//            jsonArray.put(json);
+//        }
+//        modelAndView.addObject("json", jsonArray);
+//        return modelAndView;
+//    }
+
+    //测试echarts用
+    @RequestMapping("echarts")
+    public ModelAndView getEcharts(Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("article-echarts-test");
+
+        int nums = 30;
+      //  List<Count> charts=articleService.getCountForEcharts();
+        List<Count> charts=articleService.getArticleCountMapForEcharts();
+      //  System.out.println(charts);
+
+        modelAndView.addObject("charts", charts);
+        modelAndView.addObject("nums", nums);
+        return modelAndView;
+    }
+
+    @RequestMapping("charts")
+    public ModelAndView getCharts(Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("article-charts");
+
+
+        List<Count> charts=articleService.getArticleCountMapForEcharts();
+
+        modelAndView.addObject("charts", charts);
+        return modelAndView;
+    }
+
 }

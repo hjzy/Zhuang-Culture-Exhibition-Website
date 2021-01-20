@@ -2,10 +2,12 @@ package com.train.gdmt.markdown.service;
 
 import com.train.gdmt.markdown.mapper.ArticleMapper;
 import com.train.gdmt.markdown.pojo.Article;
+import com.train.gdmt.markdown.pojo.Count;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ArticleService {
@@ -63,5 +65,9 @@ public class ArticleService {
         }
         return false;
     }
+
+    //使用Map映射处理参数，后改用List
+   // public Map<Integer, Count> getArticleCountMapForEcharts(){return articleMapper.getArticleCountMapForEcharts();}
+    public List<Count> getArticleCountMapForEcharts(){return articleMapper.getArticleCountMapForEcharts();}
 
 }

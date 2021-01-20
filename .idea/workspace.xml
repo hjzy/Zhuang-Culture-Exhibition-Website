@@ -30,13 +30,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3fad05c-6dd4-4fd9-84d7-a2a0e65f9cb8" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/swagger/SwaggerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/swagger/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/pojo/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/407f5a09-b7ae-4639-97d5-ad6725fbba34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/upload/94497719-bed1-4300-a1a6-420e576429be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/yifan/yifan-barcharts-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article-charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article-echarts-test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gdmt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gdmt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/mapper/ArticleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/train/gdmt/markdown/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/swagger/SwaggerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/train/gdmt/swagger/SwaggerProperties.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/article-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article-admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +61,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -96,7 +112,6 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="F:\OneDrive - 中国信息工程学院\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -112,28 +127,31 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/picture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/yifan" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Develop\gdmt\src\main\resources\static\yifan" />
+      <recent name="F:\Develop_Project\gdmt\src\main\resources\static" />
+      <recent name="F:\Develop_Project\gdmt\src\main\resources\templates" />
       <recent name="F:\Develop_Project\gdmt\src\main\resources\static\picture" />
       <recent name="F:\Develop_Project\gdmt\src\main\resources\templates\picture" />
-      <recent name="F:\Develop_Project\gdmt\src\main\resources\templates" />
-      <recent name="F:\Develop_Project\gdmt\src\main\resources" />
-      <recent name="F:\Develop_Project\gdmt\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Develop_Project\gdmt\src\main\resources\templates\yifan" />
       <recent name="F:\Develop_Project\gdmt\src\main\resources\templates" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -279,7 +297,19 @@
       <workItem from="1610427801504" duration="1855000" />
       <workItem from="1610437175379" duration="2025000" />
       <workItem from="1610452195947" duration="1549000" />
-      <workItem from="1610453780572" duration="396000" />
+      <workItem from="1610453780572" duration="1493000" />
+      <workItem from="1610540777753" duration="4001000" />
+      <workItem from="1610552430809" duration="4710000" />
+      <workItem from="1610557336889" duration="7106000" />
+      <workItem from="1610564523410" duration="1140000" />
+      <workItem from="1610565841677" duration="650000" />
+      <workItem from="1610567272653" duration="32000" />
+      <workItem from="1610567340839" duration="41000" />
+      <workItem from="1610605955270" duration="44000" />
+      <workItem from="1610627245372" duration="840000" />
+      <workItem from="1610893861626" duration="6495000" />
+      <workItem from="1610975787449" duration="1905000" />
+      <workItem from="1611048161654" duration="4039000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1596294064396</created>

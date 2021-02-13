@@ -7,5 +7,5 @@
 - 可有可无的登录
 - SpringMVC+Springboot+themeleaf+bootstrap+ajax+Mybatis
 - Springboot挺好玩
+- 代码在dev分支上，我懒得合并了
 - 以上
-代码在dev分支上，我懒得合并了
